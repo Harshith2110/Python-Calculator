@@ -1,48 +1,36 @@
-
-
 # Python Calculator
 
-A simple command-line calculator built with Python.
+A simple command-line calculator built using Python.
 
 ## Features
 
-✅ Addition
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Floor Division (//)
+- Modulus (%)
+- Power (**)
+- Continuous calculations using a loop
+- User-friendly interface
 
-✅ Subtraction
+## Operators Supported
 
-✅ Multiplication
-
-✅ Division
-
-✅ Continuous calculations using a loop
-
-✅ Handles invalid operators
-
-✅ User-friendly interface
+| Operator | Operation |
+|----------|-----------|
+| + | Addition |
+| - | Subtraction |
+| * | Multiplication |
+| / | Division |
+| // | Floor Division |
+| % | Modulus (Remainder) |
+| ** | Power (Exponent) |
 
 ## Technologies Used
 
 - Python 3
 
-## Project Structure
-
-```
-Python-Calculator/
-│
-├── calculator.py
-└── README.md
-```
-
 ## How to Run
-
-1. Install Python 3
-2. Clone the repository
-
-```bash
-git clone https://github.com/Harshith2110/Python-Calculator.git
-```
-
-3. Run the program
 
 ```bash
 python calculator.py
@@ -54,10 +42,11 @@ python calculator.py
 ===== CALCULATOR =====
 
 Enter first number: 10
-Enter operator (+, -, *, /): *
-Enter second number: 5
+Enter operator (+, -, *, /, //, %, **): **
 
-Result = 50.0
+Enter second number: 3
+
+Result = 1000.0
 
 Do another calculation? (y/n): y
 ```
@@ -68,16 +57,16 @@ Do another calculation? (y/n): y
 - Input / Output
 - Conditional Statements (if-elif-else)
 - Loops (while)
-- Operators
+- Arithmetic Operators
 - String Methods
 
 ## Future Improvements
 
 - Scientific Calculator
-- Square Root
-- Power Function
-- Percentage Calculator
+- Square Root Function
 - GUI using Tkinter
+- Calculation History
+- Memory Functions
 
 ## Author
 
