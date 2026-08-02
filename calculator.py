@@ -1,21 +1,36 @@
+# Python Calculator
+
 while True:
+    print("\n===== CALCULATOR =====")
 
-    num1 = float(input('Enter first number : '))
-    operation = input('Enter operation (+,-,*,/) : ')
-    num2 = float(input('Enter second number :'))
+    try:
+        num1 = float(input("Enter first number: "))
+        operator = input("Enter operator (+, -, *, /): ")
+        num2 = float(input("Enter second number: "))
 
-    if operation == '+':
-        print('Result =' , num1 + num2)
-    elif operation == '-':
-        print('Result =' , num1 - num2)
-    elif operation == '*':
-        print('Result =' , num1 * num2)
-    elif operation == '/':
-        if num2 != 0:
-            print('Result =' , num1 / num2)
+        if operator == "+":
+            print("Result =", num1 + num2)
+
+        elif operator == "-":
+            print("Result =", num1 - num2)
+
+        elif operator == "*":
+            print("Result =", num1 * num2)
+
+        elif operator == "/":
+            if num2 != 0:
+                print("Result =", num1 / num2)
+            else:
+                print("Error: Cannot divide by zero!")
+
         else:
-            print('Error: Division by ZERO!')
-    else:
-        print('Invalid operation')
+            print("Invalid operator!")
 
-print()
+    except ValueError:
+        print("Please enter valid numbers!")
+
+    choice = input("\nDo another calculation? (y/n): ")
+
+    if choice.lower() != "y":
+        print("Thank you for using Calculator!")
+        break
