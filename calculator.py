@@ -1,44 +1,41 @@
-# Python Calculator
-
-while True:
+hile True:
     print("\n===== CALCULATOR =====")
 
-    num1 = float(input("Enter first number: "))
-    operator = input("Enter operator (+, -, *, /, //, %, **): ")
-    num2 = float(input("Enter second number: "))
+    try:
+        num1 = float(input("Enter first number: "))
+        operator = input("Enter operator (+, -, *, /, //, %, **): ")
+        num2 = float(input("Enter second number: "))
 
-    if operator == "+":
-        print("Result =", num1 + num2)
+        if operator == "+":
+            print('result =' ,  num1 + num2)
 
-    elif operator == "-":
-        print("Result =", num1 - num2)
+        elif operator == "-":
+            print('result =' ,  num1 - num2)
 
-    elif operator == "*":
-        print("Result =", num1 * num2)
+        elif operator == "*":
+            print('result =' ,  num1 * num2)
 
-    elif operator == "/":
-        if num2 != 0:
-            print("Result =", num1 / num2)
+        elif operator == "/":
+            print('result =' ,  num1 / num2)
+           
+        elif operator == "//":
+              print('result =' ,  num1 // num2)
+
+        elif operator == "%":
+            print('result =' ,  num1 + num2)
+            
+        elif operator == "**":
+              print('result =' ,  num1 ** num2)
+            
         else:
-            print("Error: Cannot divide by zero!")
+            print("Invalid operator!")
+            continue
 
-    elif operator == "//":
-        if num2 != 0:
-            print("Result =", num1 // num2)
-        else:
-            print("Error: Cannot divide by zero!")
+    except ValueError:
+        print("Please enter valid numbers!")
 
-    elif operator == "%":
-        if num2 != 0:
-            print("Result =", num1 % num2)
-        else:
-            print("Error: Cannot divide by zero!")
-
-    elif operator == "**":
-        print("Result =", num1 ** num2)
-
-    else:
-        print("Invalid operator!")
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
 
     choice = input("\nDo another calculation? (y/n): ")
 
