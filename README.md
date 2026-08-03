@@ -12,12 +12,13 @@ A simple command-line calculator built using Python.
 - Modulus (%)
 - Power (**)
 - Continuous calculations using a loop
-- User-friendly interface
+- Error handling for invalid input
+- Division by zero protection
 
 ## Operators Supported
 
 | Operator | Operation |
-|----------|-----------|
+|-----------|-----------|
 | + | Addition |
 | - | Subtraction |
 | * | Multiplication |
@@ -26,11 +27,12 @@ A simple command-line calculator built using Python.
 | % | Modulus (Remainder) |
 | ** | Power (Exponent) |
 
-## Technologies Used
-
-- Python 3
-
 ## How to Run
+
+1. Install Python 3
+2. Download `calculator.py`
+3. Open Terminal or Command Prompt
+4. Run:
 
 ```bash
 python calculator.py
@@ -55,9 +57,10 @@ Do another calculation? (y/n): y
 
 - Variables
 - Input / Output
-- Conditional Statements (if-elif-else)
-- Loops (while)
+- If-Else Statements
+- While Loop
 - Arithmetic Operators
+- Exception Handling
 - String Methods
 
 ## Future Improvements
