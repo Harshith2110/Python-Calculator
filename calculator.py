@@ -1,4 +1,4 @@
-hile True:
+while True:
     print("\n===== CALCULATOR =====")
 
     try:
